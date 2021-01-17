@@ -54,7 +54,9 @@ class _DialogboxwidgetState extends State<Dialogboxwidget> {
           Container(
               alignment: Alignment.center,
               margin: EdgeInsets.only(bottom: 220),
-              height: 100,
+              height: size.height > size.width
+                  ? 100 * size.width / 390
+                  : 100 * size.width / 760,
               width: size.width - 60,
               child: Swiper(
                 viewportFraction: 0.5,
@@ -119,7 +121,7 @@ class _DialogboxwidgetState extends State<Dialogboxwidget> {
                 itemBuilder: (context, index) {
                   return GestureDetector(
                       onTap: () {
-                        cupdate[id] = cvalue+1;
+                        cupdate[id] = cvalue + 1;
                         Navigator.pop(context);
                         if (id > 0) Datafilemanage.saveData(id);
                         if (id > 0)

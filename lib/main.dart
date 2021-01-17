@@ -645,6 +645,11 @@ class _MenulistState extends State<Menulist> {
                               else {
                                 setState(() {
                                   notification_time[i] = false;
+                                  int fflag = 0;
+                                  for (int j = 1; j < 11; j++) {
+                                    if (notification_time[j] == true) fflag = 1;
+                                  }
+                                  if (fflag == 0) notification_time[0] = false;
                                   Map<String, String> register_data = {
                                     "register_token": fcmtoken,
                                     "time": i.toString(),
