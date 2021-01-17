@@ -1,0 +1,5 @@
+{
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "python.pythonPath": "C:\\Users\\kni\\AppData\\Local\\Programs\\Python\\Python36\\python.exe"
+}
