@@ -524,10 +524,6 @@ class _MenulistState extends State<Menulist> {
                       Datafilemanage.save_notification_time();
                     });
                   }
-                else
-                  setState(() {
-                    notification_time[0] = true;
-                  });
               },
               //show notification
               child: Container(
@@ -565,10 +561,6 @@ class _MenulistState extends State<Menulist> {
                                   Datafilemanage.save_notification_time();
                                 });
                               }
-                            else
-                              setState(() {
-                                notification_time[0] = true;
-                              });
                           },
                         ))
                   ],
