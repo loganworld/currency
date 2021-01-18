@@ -78,13 +78,22 @@ class currencywidget extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Text(((currencytypedata[sortsequency[id]].amount)
-                                    .floor())
-                            .toString()+"."+
-                        ((currencytypedata[sortsequency[id]].amount * 1000)
-                                    .floor()-(currencytypedata[sortsequency[id]].amount)
-                                    .floor()*1000)
-                            .toString(),
+                      Text(
+                        ((currencytypedata[sortsequency[id]].amount).floor())
+                                .toString() +
+                            "." +
+                            prefix(((currencytypedata[sortsequency[id]].amount *
+                                        1000)
+                                    .floor() -
+                                (currencytypedata[sortsequency[id]].amount)
+                                        .floor() *
+                                    1000)) +
+                            ((currencytypedata[sortsequency[id]].amount * 1000)
+                                        .floor() -
+                                    (currencytypedata[sortsequency[id]].amount)
+                                            .floor() *
+                                        1000)
+                                .toString(),
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.black,
@@ -116,6 +125,14 @@ class currencywidget extends StatelessWidget {
             ],
           ),
         ));
+  }
+
+  String prefix(int value) {
+    return value < 10
+        ? "00"
+        : value < 100
+            ? "0"
+            : "";
   }
 }
 
