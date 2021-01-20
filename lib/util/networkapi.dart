@@ -21,7 +21,7 @@ class ResponseModel {
       {this.state = false,
       this.timestamp = 0,
       this.base = "EUR",
-      this.date = null,
+      this.date = "",
       this.rates = null});
 
   ResponseModel.fromJson(Map<String, dynamic> json) {

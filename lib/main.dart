@@ -37,6 +37,7 @@ void callbackDispatcher() {
   Workmanager.executeTask((task, inputData) async {
     print("notification");
     shownotification();
+    return true;
   });
   /* getnotificationstrange().then((v) {
     loadnotificationdata().then((value) {
@@ -97,6 +98,7 @@ Future shownotification() {
               " " +
               "Lowest :" +
               currencytypedata2[4][sortsequency_2[4][7]].type));
+  
 }
 
 //main
