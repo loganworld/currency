@@ -1,4 +1,4 @@
-package com.currency.currency
+package com.fx.currencystrength
 
 import io.flutter.embedding.android.FlutterActivity
 

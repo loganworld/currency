@@ -19,6 +19,8 @@ import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:workmanager/workmanager.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:in_app_purchase/in_app_purchase.dart';
+
 //backgroundservice handler
 
 Future getnotificationstrange() async {
@@ -104,6 +106,8 @@ Future shownotification() {
 //main
 void main() {
   // WidgetsFlutterBinding.ensureInitialized();
+  
+  InAppPurchaseConnection.enablePendingPurchases();
   runApp(
       MaterialApp(title: 'distant', debugShowCheckedModeBanner: false, routes: {
     '/': (context) => Dashboard(),

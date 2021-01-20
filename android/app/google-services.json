@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:767717240575:android:5d2b9bd4f481208f0c66ca",
         "android_client_info": {
-          "package_name": "com.currency.currency"
+          "package_name": "com.fx.currencystrength"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "767717240575-nqbv0f6hbgi6obpshck21qpfp2o0b05t.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.currency.currency",
+            "package_name": "com.fx.currencystrength",
             "certificate_hash": "065aed008677292c1e5636575b20377a3003d74e"
           }
         },
